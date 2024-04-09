@@ -11,23 +11,22 @@ namespace binary_node1
 		{
 			Value = value;
 			LeftChild = null;
-            RightChild = null;
+            		RightChild = null;
 		}
 
-       // node adding functions
+       		// node adding functions
 		internal void  AddLeft(BinaryNode<T> child)
 		{
 			LeftChild = child;
 		}
 
-        internal void AddRight(BinaryNode<T> child)
-        {
-            RightChild = child;
-        }
+        	internal void AddRight(BinaryNode<T> child)
+        	{
+            	RightChild = child;
+        	}
 
 		// override ToString
-        public override string ToString()
-        {
+        	public override string ToString() {
 			string val = string.Format("{0}", Value);
 			string left, right;
 
@@ -38,7 +37,7 @@ namespace binary_node1
 			else
 			{
 				left = string.Format("{0}", LeftChild.Value);
-            }
+            		}
 
 			if (RightChild == null)
 			{
